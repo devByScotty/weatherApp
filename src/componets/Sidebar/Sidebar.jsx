@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import CircularProgress from '@mui/material/CircularProgress';
-import axios from 'axios';
 import './Sidebar.css';
 import SearchOutlinedIcon from '@mui/icons-material/SearchOutlined';
 import MyLocationOutlinedIcon from '@mui/icons-material/MyLocationOutlined';
