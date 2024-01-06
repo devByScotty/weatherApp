@@ -1,0 +1,252 @@
+/* Sidebar.css */
+.main {
+  
+  display: grid;
+  grid-template-columns: 1fr 2fr; /* Adjust column sizes as needed */
+  gap: 20px; /* Adjust gap between columns as needed */
+  width:100%;
+  overflow:hidden; /* Set a maximum width if necessary */
+}
+
+.sidebar {
+    width: 400px;
+    background-color: var(--white-1);
+    box-shadow:var(--shadow-1);
+    color: var(--black);
+    padding:20px 20px;
+  }
+
+  .searchbox {
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    gap:5px;
+    margin-top: 40px;
+    padding:15px 15px;
+    position: relative;
+    background-color:var(--platinum);
+    border: 2px solid var(--shadow-1);
+    border-radius:50px;
+    width:300px;
+    box-shadow:var(--shadow-2);
+    z-index:9999;
+  } 
+  
+.searchArea {
+
+  background-color:var(--platinum);
+  height:32px;
+  width:200px;
+  border: 2px solid var(--shadow-2);
+  box-shadow:var(--shadow-1);
+  border-radius:50px;
+  color:black;
+  font-weight:550;
+  }
+
+  .searchArea:focus {
+    height:32px;
+    width:200px;
+    box-shadow:var(--shadow-1);
+    border-radius:50px;
+    background-color:white;
+    color:black;
+    
+  }
+  
+
+  .searchbox .icon{
+
+    font-size:25px;
+    color:var(--eerie-black);
+    font-weight:250;
+
+  }
+
+  .searchbox .icon1{
+
+    font-size:25px;
+    color:var(--eerie-black);
+    font-weight:250;
+    
+
+  }
+
+  .bottombox{
+      display:flex;
+      flex-direction:column;
+      padding:10px 10px;
+      margin:10px 10px;
+  }
+
+  .top-section {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+        height:22rem;
+        border-bottom:2px solid var(--cultured);
+       
+  }
+
+
+  .top-section  img{
+
+      height:15rem;
+      width:100%;
+      font-weight:200px;
+      z-index:9999999;
+     
+  }
+
+
+.top-section h1 {
+
+    font-size:40px;
+    font-weight:600;
+  }
+
+
+  .top-section p {
+
+    font-size:20px;
+    font-weight:250;
+  }
+
+.bottom-section {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  justify-content:center;
+  height:15rem;
+  margin-top:10px;
+  border-bottom:2px solid var(--cultured);
+
+}
+
+.bottom-section h3 {
+    font-size:20px;
+    font-weight:300;
+    text-transform: uppercase;
+
+}
+
+.bottom-section h1{
+  font-size:35px;
+}
+
+.mainbar{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    pading:10px 10px;
+}
+
+.forecast-container {
+  display:flex;
+  flex-direction:row;
+  pading:10px 10px;
+  
+}
+
+.mainbar h1{
+    position:relative;
+    top:15px;
+    left:40px;
+    align-items:center;
+    text-align:center;
+    padding:10px 10px;
+    width:90%;
+    font-size:25px;
+    font-weight:300px;
+    border-bottom:2px solid var(--cultured);
+    
+}
+
+/* HeroSection.css */
+.highlight-container {
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  
+}
+
+
+.highlight-container h1{
+ 
+  
+}
+
+.mainbar .highlights-title{
+  position:relative;
+  top:0px;
+  margin-bottom:20px;
+  left:40px;
+  align-items:center;
+  text-align:center;
+  padding:5px 5px;
+  width:90%;
+  font-size:25px;
+  font-weight:200px;
+  border-bottom:2px solid var(--cultured);
+ 
+}
+
+
+/* Media query for smaller screens */
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+
+  .main{
+    display:flex;
+    flex-direction:column;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+  }
+
+  .sidebar{
+    width:100%;
+    height:100%;
+    
+  }
+
+  .searchbox{
+    margin-left:20px;
+  }
+
+  .forecast-container {
+    display:flex;
+    flex-direction:column;
+    margin-top:5px;
+    width:100%;
+    
+  }
+
+  .highlight-container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    width:100%;
+    padding:10px 10px;
+    margin-left:20px;
+
+  }
+}
+
+@media screen (min-width: 1024px) {
+
+  main {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .sidebar {
+    width: 400px;
+    height: 100%; /* You can adjust the height if needed */
+  }
+
+}
